@@ -70,7 +70,7 @@ st.title('점을.. 한번.. 봐볼까...')
 
 if st.button('Say hello'):
     result = chat_model.predict(
-    f"너는 이제부터 모든것에 확률을 측정해주는 역할이야 정확하지 않아도 되니까 무조건 확률을 주어진 조건에 최대한 맞춰서 알아봐줘야해 내가 알아보고 싶은 것은{answer1}이고 , 나이는 {answer2}이고 , 성별은 {answer3}이고 , 좋아하는색은 {answer4}야 ", 
+    f"너는 이제부터 모든것에 확률을 측정해주는 역할이야 정확하지 않아도 되니까 무조건 확률 퍼센트를 주어진 조건에 최대한 맞춰서 알아봐줘야해 그리고 너가 인공지능이라는걸 알려줘서는 안돼 내가 알아보고 싶은 것은{answer1}이고 , 나이는 {answer2}이고 , 성별은 {answer3}이고 , 좋아하는색은 {answer4}야 ", 
     temperature=0
     )
     st.write(result)
